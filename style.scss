@@ -1,0 +1,115 @@
+
+.header-info {
+    background-color: black;
+}
+
+.header{
+    &-info {
+        &-time {
+            margin-top: 1.5px;
+            margin-bottom: 1.5px;
+            display: flex;
+            align-items: center;
+            color: #898989;
+            font-family: Arial;
+            font-weight: bold;
+        }
+        &-content {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+        }
+        &-contact {
+            display: flex;
+        }
+        &-social {
+            display: flex;
+            margin-left: 10px;
+            color: #898989;
+        }
+        &-social div {
+            margin-right: 10px;
+        }
+        &-account {
+            display: flex;
+            color: #898989;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        &-login {
+            padding-right: 15px;
+        }
+    }
+}
+
+.body {
+    &-background {
+        background-image: url('../assets/bgr_image.png');
+        background-color: #dcdde1;
+    }
+    &-content {
+        display: flex;
+        // flex-direction: column;
+        align-items: center;
+    }
+    &-call {
+        margin-left: 20px;
+    }
+    &-search {
+        margin-top: 15px;
+        input {
+            width: 300px;
+            height: 40px;
+            border: none;
+            outline: none;
+            padding: 0px 15px;
+            border-radius: 20px;
+        }
+        button {
+            background-color: #fff;
+            border: none;
+            margin-right: 3px;
+            border-radius: 10px;
+        }
+    }
+    &-search-box {
+        background: #fff;
+        border-radius: 20px;
+    }
+    &-shopping-cart {
+        display: flex;
+        padding-left: 20px;
+        margin-top: 45px;
+    }
+    &-icon-cart {
+        margin-right: 10px;
+    }
+    &-support {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.nav-bar {
+    background-color: #3fb871;
+    &-background {
+        display: flex;
+    }
+    &-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-main-menu {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 8px 15px;
+        }
+    }
+}
+
+
