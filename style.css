@@ -1,10 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
 .header-info {
   background-color: black;
 }
 
 .header-info-time {
-  margin-top: 1.5px;
-  margin-bottom: 1.5px;
   display: flex;
   align-items: center;
   color: #898989;
@@ -24,10 +24,20 @@
   margin-left: 10px;
   color: #898989;
 }
+.header-info-social .facebook, .header-info-social .twitter, .header-info-social .tumblr, .header-info-social .vimeo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .header-info-social div {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 .header-info-account {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.4px;
+  margin-bottom: 1.4px;
   display: flex;
   color: #898989;
   font-family: Arial, Helvetica, sans-serif;
@@ -43,35 +53,43 @@
 .body-content {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .body-call {
   margin-left: 20px;
 }
 .body-search {
   margin-top: 15px;
+  flex: 1;
 }
 .body-search input {
-  width: 300px;
+  width: 350px;
   height: 40px;
   border: none;
   outline: none;
-  padding: 0px 15px;
+  padding: 0px 30px;
   border-radius: 20px;
 }
 .body-search button {
   background-color: #fff;
   border: none;
-  margin-right: 3px;
-  border-radius: 10px;
+  border-radius: 20px;
+  display: flex;
+  width: 50px;
+  height: 10px;
+  align-items: center;
+  justify-content: center;
 }
 .body-search-box {
   background: #fff;
-  border-radius: 20px;
+  border-radius: 30px;
+  display: flex;
+  height: 40px;
+  align-items: center;
 }
 .body-shopping-cart {
   display: flex;
-  padding-left: 20px;
-  margin-top: 45px;
+  margin-top: 50px;
 }
 .body-icon-cart {
   margin-right: 10px;
@@ -91,15 +109,63 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
 }
 .nav-bar-main-menu {
   list-style: none;
   display: flex;
-  justify-content: center;
+  margin: 16px 0;
 }
 .nav-bar-main-menu a {
+  justify-content: center;
+  align-items: center;
   color: white;
   text-decoration: none;
   display: block;
   padding: 8px 15px;
+  font-family: "Roboto", sans-serif;
+}
+.nav-bar-dropdown {
+  display: flex;
+}
+.nav-bar-dropdown i {
+  align-items: center;
+  padding-left: 5px;
+  position: absolute;
+}
+.nav-bar-dropdown-content dropdown-item {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.content {
+  background-image: url("../assets/Untitled-1.png");
+  height: 100vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.content-green-shop {
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  font-size: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.content-title {
+  font-family: "Roboto Slab", serif;
+  color: #fff;
+}
+.content-hire {
+  color: white;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 5rem;
+}
+.content-text {
+  font-size: 20px;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
