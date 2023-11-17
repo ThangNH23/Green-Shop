@@ -10,12 +10,16 @@
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="javascript.js"></script>
     <title>Green-Shop</title>
   </head>
   <body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <header>
       <div class="header-info">
         <div class="container">
@@ -27,19 +31,15 @@
               </div>
               <div class="header-info-social">
                 <div class="facebook">
-                  <div><hr class="space" size="50" width="1" /></div>
                   <i class="fa fa-facebook" aria-hidden="true"></i>
                 </div>
                 <div class="twitter">
-                  <div><hr class="space" size="50" width="1" /></div>
                   <i class="fa fa-twitter" aria-hidden="true"></i>
                 </div>
                 <div class="tumblr">
-                  <div><hr class="space" size="50" width="1" /></div>
                   <i class="fa fa-tumblr" aria-hidden="true"></i>
                 </div>
                 <div class="vimeo">
-                  <div><hr class="space" size="50" width="1" /></div>
                   <i class="fa fa-vimeo" aria-hidden="true"></i>
                 </div>
               </div>
@@ -61,7 +61,7 @@
         <div class="container">
           <div class="body-content">
             <div class="body-logo">
-              <img class="logo" src="../assets/Green-Shop.png" alt="" />
+              <img class="logo" src="../assets/Logo-Icon.png" alt="" />
               <img class="giohang" src="../assets/06Gio-hang.png" alt="" />
             </div>
             <div class="body-support">
@@ -88,7 +88,7 @@
               <div class="body-icon-cart">
                 <i class="fa fa-shopping-basket" aria-hidden="true"></i>
               </div>
-              <div>
+              <div class="body-shopping-product">
                 <p>0 Sản phẩm</p>
               </div>
             </div>
@@ -105,40 +105,40 @@
               <nav>
                 <ul class="nav-bar-main-menu">
                   <li>
-                    <a href="">TRANG CHỦ</a>
+                    <a class="homepage" href="">TRANG CHỦ</a>
                   </li>
                   <li>
-                    <a href="">GIỚI THIỆU</a>
+                    <a class="introduce" href="">GIỚI THIỆU</a>
                   </li>
                   <li class="nav-bar-dropdown">
-                    <a class="dropbtn" onclick="myFunction()" href="">
+                    <a class="sanpham" class="dropbtn" href="">
                       <span class="produc-text">SẢN PHẨM</span> 
                       <i class="fa fa-sort-desc" aria-hidden="true"></i>
                     </a>
-                    <ul class="dropdown-menu nav-bar-dropdown-content" id="myDropdown">
-                      <li class="nav-bar-dropdown-item">item-1</li>
-                      <li class="nav-bar-dropdown-item">item-2</li>
-                      <li class="nav-bar-dropdown-item">item-3</li>
-                      <li class="nav-bar-dropdown-item">item-4</li>
+                    <ul class="nav-bar-product-list" >
+                      <li><a href="#">item-1</a></li>
+                      <li><a href="#">item-2</a></li>
+                      <li><a href="#">item-3</a></li>
+                      <li><a href="#">item-4</a></li>
                     </ul>
                   </li>
                   <li class="nav-bar-dropdown">
-                    <a href="">
+                    <a class="sanphammoi" href="">
                       <span class="produc-text">SẢN PHẨM MỚI</span> 
                       <i class="fa fa-sort-desc" aria-hidden="true"></i>
                     </a>
-                    <ul class="dropdown-menu nav-bar-show" aria-labelledby="dropdownMenuButton">
-                      <li class="dropdown-item">item-1</li>
-                      <li class="dropdown-item">item-2</li>
-                      <li class="dropdown-item">item-3</li>
-                      <li class="dropdown-item">item-4</li>
+                    <ul class="nav-bar-product-list">
+                      <li><a href="#">item-1</a></li>
+                      <li><a href="#">item-2</a></li>
+                      <li><a href="#">item-3</a></li>
+                      <li><a href="#">item-4</a></li>
                     </ul>
                   </li>
                   <li>
-                    <a href="">TIN TỨC</a>
+                    <a class="tintuc" href="">TIN TỨC</a>
                   </li>
                   <li>
-                    <a href="">LIÊN HỆ</a>
+                    <a class="lienhe" href="">LIÊN HỆ</a>
                   </li>
                 </ul>
               </nav>
@@ -147,12 +147,954 @@
         </div>
       </div>
       <div class="content">
-        <div class="content-green-shop">
-          <p class="content-title">GREEN SHOP</p>
-          <p class="content-hire">CHO THUÊ CÂY CẢNH TẾT 2016</p>
-          <i class="content-text">(Miễn phí vận chuyển với những đơn hàng có giá trị trên 5.000.000 đ)</i>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel-caption d-none d-md-block" style="margin-bottom: 100px;">
+                <p class="content-title" >GREEN SHOP</p>
+                <p class="content-hire">CHO THUÊ CÂY CẢNH TẾT 21016</p>
+                <p class="content-text"><i>(Miễn phí vận chuyển với những đơn hàng có giá trị trên 5.000.000 đ)</i></p>
+              </div>
+              <img class="d-block w-100" src="../assets/background_image-1.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="../assets/background_image-1.png" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="../assets/background_image-1.png" alt="Third slide">
+              
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </div>
     </header>
+
+    <body>
+      <div class="categories">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 outstanding-product">Sản phẩm nổi bật</div>
+            <div class="footer-homepage-hrtag">
+              <hr width="100%" style="color: #494949; margin-top: -30px; ">
+            </div>
+          </div>      
+
+          <div class="row">
+            <div class="col-6">
+              <div class="categories-page-1">
+                <div class="categories-image">
+                  <div class="categories-new">
+                    <p>New</p>
+                  </div>
+                  <img src="../assets/spx2-4.png" alt="">
+                </div>
+                <div class="categories-information">
+                  <p class="categories-name">Cây chân chim</p>
+                  <div class="categories-star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                  </div>
+                  <div class="categories-price">
+                    <p class="categories-firstPrice">250.000 đ</p>
+                    <p class="categories-priceDiscount">250.000 đ</p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6">
+                  <div class="categories-page-1a">
+                    <img src="../assets/spx2-1.png" alt="">
+                  </div>
+                  <div class="categories-information-2">
+                    <p class="categories-name">Cây cọ ta</p>
+                    <div class="categories-star">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                  </div>
+                    <div class="categories-price">
+                      <p class="categories-firstPrice">150.000 đ</p>
+                      <p class="categories-priceDiscount">250.000 đ</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="categories-page-1a">
+                    <img src="../assets/spx2-11.png" alt="">
+                  </div> 
+                  <div class="categories-information-2">
+                    <p class="categories-name">Cây dứa nhỏ</p>
+                    <div class="categories-star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                  </div>
+                  <div class="categories-price">
+                    <p class="categories-firstPrice">375.000 đ</p>
+                    <p class="categories-priceDiscount">250.000 đ</p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="row">
+                <div class="col-6">
+                  <div class="categories-page-1a">
+                    <div class="categories-new">
+                      <p>50%</p>
+                    </div>
+                    <img src="../assets/spx2-15.png" alt="">
+                  </div>
+                  <div class="categories-information-2">
+                    <p class="categories-name">Cây Dạ Lam</p>
+                    <div class="categories-star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                  </div>
+                    <div class="categories-price">
+                      <p class="categories-firstPrice">500.000 đ</p>
+                      <p class="categories-priceDiscount">250.000 đ</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="categories-page-1a">
+                    <div class="categories-new">
+                      <p>50%</p>
+                    </div>
+                    <img src="../assets/spx2-11.png" alt="">
+                  </div> 
+                  <div class="categories-information-2">
+                    <p class="categories-name">Cây Danh Dự</p>
+                    <div class="categories-star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                  </div>
+                  <div class="categories-price">
+                    <p class="categories-firstPrice">850.000 đ</p>
+                    <p class="categories-priceDiscount">250.000 đ</p>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="categories-page-1b">
+                <div class="categories-image">
+                  <div class="categories-new">
+                    <p>New</p>
+                  </div>
+                  <img src="../assets/spx2-5.png" alt="">
+                </div>
+                <div class="categories-information">
+                  <p class="categories-name">Cây đa búp đỏ</p>
+                  <div class="categories-star">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                  </div>
+                  <div class="categories-price">
+                    <p class="categories-firstPrice">1.000.000 đ</p>
+                    <p class="categories-priceDiscount">250.000 đ</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">
+              <p class="hot-product">Sản phẩm mua nhiều</p>
+              <div class="footer-homepage-hrtag">
+                <hr width="100%" style="color: #494949; margin-top: -45px; ">
+              </div>
+            </div>
+            <div class="col-9">
+              <p class="discount-product">Sản phẩm khuyến mãi</p>
+              <div class="footer-homepage-hrtag">
+                <hr width="100%" style="color: #494949; margin-top: -45px; ">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-3" style="margin-top: 15px;">
+              <div class="row">
+                <div class="categories-page-2" style="border-bottom: none;">
+                  <div class="col-4">
+                    <img src="../assets/spx2-11.png" alt="">
+                  </div>
+                  <div class="col-8">
+                    <div class="categories-page-2-info">
+                      <span class="categories-page-2-title">Cây đa búp đỏ</span>
+                      <div class="categories-page-2-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                      </div>
+                      <div class="categories-page-2-infoPrice">
+                        <p>250.000 đ</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="categories-page-2" style="border-bottom: none;">
+                  <div class="col-4">
+                    <img src="../assets/spx2-11.png" alt="">
+                  </div>
+                  <div class="col-8">
+                    <div class="categories-page-2-info">
+                      <span class="categories-page-2-title">Cây đa búp đỏ</span>
+                      <div class="categories-page-2-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                      </div>
+                      <div class="categories-page-2-infoPrice">
+                        <p>250.000 đ</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="categories-page-2" style="border-bottom: none;">
+                  <div class="col-4">
+                    <img src="../assets/spx2-11.png" alt="">
+                  </div>
+                  <div class="col-8">
+                    <div class="categories-page-2-info">
+                      <span class="categories-page-2-title">Cây đa búp đỏ</span>
+                      <div class="categories-page-2-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                      </div>
+                      <div class="categories-page-2-infoPrice">
+                        <p>250.000 đ</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="categories-page-2" style="border-bottom: none;">
+                  <div class="col-4">
+                    <img src="../assets/spx2-11.png" alt="">
+                  </div>
+                  <div class="col-8">
+                    <div class="categories-page-2-info">
+                      <span class="categories-page-2-title">Cây đa búp đỏ</span>
+                      <div class="categories-page-2-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                      </div>
+                      <div class="categories-page-2-infoPrice">
+                        <p>250.000 đ</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="categories-page-2" style="border-bottom: none;">
+                  <div class="col-4">
+                    <img src="../assets/spx2-11.png" alt="">
+                  </div>
+                  <div class="col-8">
+                    <div class="categories-page-2-info">
+                      <span class="categories-page-2-title">Cây đa búp đỏ</span>
+                      <div class="categories-page-2-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                      </div>
+                      <div class="categories-page-2-infoPrice">
+                        <p>250.000 đ</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="categories-page-2">
+                  <div class="col-4">
+                    <img src="../assets/spx2-11.png" alt="">
+                  </div>
+                  <div class="col-8">
+                    <div class="categories-page-2-info">
+                      <span class="categories-page-2-title">Cây đa búp đỏ</span>
+                      <div class="categories-page-2-star">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                      </div>
+                      <div class="categories-page-2-infoPrice">
+                        <p>250.000 đ</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col-3">
+              <div class="discount-product-image1">
+                <div class="categories-new">
+                  <p>-25%</p>
+                </div>
+                <img src="../assets/spx2-15.png" alt="">
+              </div>
+              <div class="discount-product-information">
+                <p class="categories-name">Cây Danh Dự</p>
+                <div class="categories-star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <div class="categories-price">
+                  <p class="categories-firstPrice">475.000 đ</p>
+                  <p class="categories-priceDiscount">250.000 đ</p>
+                </div>
+              </div>
+
+              <div class="discount-product-image1">
+                <img src="../assets/spx2-2.png" alt="">
+              </div>
+              <div class="discount-product-information">
+                <p class="categories-name">Cây Dạ Lam</p>
+                <div class="categories-star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <div class="categories-price">
+                  <p class="categories-firstPrice">555.000 đ</p>
+                  <p class="categories-priceDiscount">250.000 đ</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="discount-product-image1">
+                <div class="categories-new">
+                  <p>-10%</p>
+                </div>
+                <img src="../assets/spx2-12.png" alt="">
+              </div>
+              <div class="discount-product-information">
+                <p class="categories-name">Cây dứa nhỏ</p>
+                <div class="categories-star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <div class="categories-price">
+                  <p class="categories-firstPrice">668.000 đ</p>
+                  <p class="categories-priceDiscount">250.000 đ</p>
+                </div>
+              </div>
+
+              <div class="discount-product-image1">
+                <img src="../assets/spx2-8.png" alt="">
+              </div>
+              <div class="discount-product-information">
+                <p class="categories-name">Cây Danh Dự</p>
+                <div class="categories-star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <div class="categories-price">
+                  <p class="categories-firstPrice">780.000 đ</p>
+                  <p class="categories-priceDiscount">250.000 đ</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="discount-product-image1">
+                <img src="../assets/spx2-11.png" alt="">
+              </div>
+              <div class="discount-product-information">
+                <p class="categories-name">Cây cọ ta</p>
+                <div class="categories-star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <div class="categories-price">
+                  <p class="categories-firstPrice">770.000 đ</p>
+                  <p class="categories-priceDiscount">250.000 đ</p>
+                </div>
+              </div>
+
+              <div class="discount-product-image1">
+                <img src="../assets/spx2-1.png" alt="">
+              </div>
+              <div class="discount-product-information">
+                <p class="categories-name">Cây dứa nhỏ</p>
+                <div class="categories-star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <div class="categories-price">
+                  <p class="categories-firstPrice">680.000 đ</p>
+                  <p class="categories-priceDiscount">250.000 đ</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <div class="image-famous">
+                <img src="../assets/img-content-1.png" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <p class="new-product-text">Sản phẩm mới</p>
+              <div class="footer-homepage-hrtag">
+                <hr width="100%" style="color: #494949; margin-top: -45px; ">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">
+              <div class="discount-product-image1">
+                <div class="categories-new">
+                  <p>New</p>
+                </div>
+                <img src="../assets/spx2-15.png" alt="">
+              </div>
+              <div class="new-product-information">
+                <p class="categories-name">Cây Danh Dự</p>
+                <div class="categories-star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <div class="categories-price">
+                  <p class="categories-firstPrice">250.000 đ</p>
+                  <p class="categories-priceDiscount">250.000 đ</p>
+                </div>
+              </div>
+
+              <div class="discount-product-image1">
+                <img src="../assets/spx2-1.png" alt="">
+              </div>
+              <div class="new-product-information">
+                <p class="categories-name">Cây Danh Dự</p>
+                <div class="categories-star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <div class="categories-price">
+                  <p class="categories-firstPrice">680.000 đ</p>
+                  <p class="categories-priceDiscount">250.000 đ</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="discount-product-image1">
+                <img src="../assets/spx2-7.png" alt="">
+              </div>
+              <div class="new-product-information">
+                <p class="categories-name">Cây xương rồng</p>
+                <div class="categories-star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <div class="categories-price">
+                  <p class="categories-firstPrice">250.000 đ</p>
+                  <p class="categories-priceDiscount">250.000 đ</p>
+                </div>
+              </div>
+
+              <div class="discount-product-image1">
+                <img src="../assets/spx2-5.png" alt="">
+              </div>
+              <div class="new-product-information">
+                <p class="categories-name">Cây Dạ Lam</p>
+                <div class="categories-star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <div class="categories-price">
+                  <p class="categories-firstPrice">880.000 đ</p>
+                  <p class="categories-priceDiscount">250.000 đ</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="discount-product-image1">
+                <img src="../assets/spx2-12.png" alt="">
+              </div>
+              <div class="new-product-information">
+                <p class="categories-name">Cây Dạ Lam</p>
+                <div class="categories-star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <div class="categories-price">
+                  <p class="categories-firstPrice">250.000 đ</p>
+                  <p class="categories-priceDiscount">250.000 đ</p>
+                </div>
+              </div>
+
+              <div class="discount-product-image1">
+                <img src="../assets/spx2-2.png" alt="">
+              </div>
+              <div class="new-product-information">
+                <p class="categories-name">Cây chân chim</p>
+                <div class="categories-star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <div class="categories-price">
+                  <p class="categories-firstPrice">750.000 đ</p>
+                  <p class="categories-priceDiscount">250.000 đ</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-3">
+              <div class="discount-product-image1">
+                <img src="../assets/spx2-11.png" alt="">
+              </div>
+              <div class="new-product-information">
+                <p class="categories-name">Cây dứa nhỏ</p>
+                <div class="categories-star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <div class="categories-price">
+                  <p class="categories-firstPrice">250.000 đ</p>
+                  <p class="categories-priceDiscount">250.000 đ</p>
+                </div>
+              </div>
+
+              <div class="discount-product-image1">
+                <img src="../assets/spx2-14.png" alt="">
+              </div>
+              <div class="new-product-information">
+                <p class="categories-name">Cây đa búp đỏ</p>
+                <div class="categories-star">
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star" aria-hidden="true"></i>
+                  <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <div class="categories-price">
+                  <p class="categories-firstPrice">150.000 đ</p>
+                  <p class="categories-priceDiscount">250.000 đ</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <p class="news">Tin tức</p>
+              <div class="footer-homepage-hrtag">
+                <hr width="100%" style="color: #494949; margin-top: -5px; margin-bottom: 30px;">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-4">
+              <div class="news-image1">
+                <img src="../assets/new-image1.png" alt="">
+              </div>
+              <div class="news-infoDetail">
+                <i class="news-infoDetail-time">Thứ 7, ngày 31, tháng 12, năm 2015</i>
+                <p class="news-infoDetail-title">15 thiết kế phòng ngủ tuyệt đẹp làm vạn người mê</p>
+                <p class="news-infoDetail-detail">Cùng Sài Gòn Hoa tìm hiểu một vài thiết kế sân vườn được ưa chuộng hiện nay nhé ! Kết hợp hàng rào</p>
+                <i><a class="news-infoDetail-continues" href="">Đọc tiếp</a></i>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="news-image1">
+                <img src="../assets/new-image1.png" alt="">
+              </div>
+              <div class="news-infoDetail">
+                <i class="news-infoDetail-time">Thứ 7, ngày 31, tháng 12, năm 2015</i>
+                <p class="news-infoDetail-title">Tạo Tiểu Cảnh Góc Sân Cho Nhà Phố, Biệt Thự Đẹp</p>
+                <p class="news-infoDetail-detail">Khi bước từ ngoài ngõ vào hay từ trong nhà đi ra, góc sân luôn là điểm nhìn đầu tiên của chúng ta</p>
+                <i><a class="news-infoDetail-continues" href="">Đọc tiếp</a></i>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="news-image1">
+                <img src="../assets/new-image1.png" alt="">
+              </div>
+              <div class="news-infoDetail">
+                <i class="news-infoDetail-time">Thứ 7, ngày 31, tháng 12, năm 2015</i>
+                <p class="news-infoDetail-title">Cách bố trí hoa chậu trước cửa ấn tượng</p>
+                <p class="news-infoDetail-detail">Như thể hiện sự thân thiện cũng như sự hiếu khách của gia chủ, phần không gian trước cửa</p>
+                <i><a class="news-infoDetail-continues" href="">Đọc tiếp</a></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    
+
+    <footer>
+      <div class="footer-homepage">
+        <div class="container">
+          <div class="footer-homepage-header">
+            <div class="footer-homepage-info">
+              <p>KÊNH THÔNG TIN TỪ CHÚNG TÔI</p>
+              <div class="footer-homepage-social">
+                <div class="facebook">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </div>
+                <div class="twitter">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </div>
+                <div class="youtube">
+                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </div>
+                <div class="vimeo">
+                  <i class="fa fa-vimeo" aria-hidden="true"></i>
+                </div>
+              </div>
+            </div>
+            <div class="footer-homepage-register">
+              <p class="receive">ĐĂNG KÝ NHẬN</p>
+              <p>EMAIL TỪ CHÚNG TÔI</p>
+            </div>
+            <div class="footer-homepage-form">
+              <form action="" class="footer-homepage-search">
+                <input type="search" id="search" class="footer-homepage-search">
+                <button><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+              </form>
+            </div>
+          </div>
+
+          <div class="footer-homepage-hrtag">
+            <hr width="100%" style="color: #494949;">
+          </div>
+
+          <div class="footer-homepage-content">
+            <div class="footer-homepage-firstContent">
+              <div class="footer-homepage-logo">
+                <img src="../assets/Logo-Icon.png" alt="">
+              </div>
+              <div class="footer-homepage-establish">
+                <p>
+                  Green Shop được thành lập từ 8/2010 được sự tin tưởng của 
+                  khách hàng trong suốt thời gian hoạt động đến nay cửa hàng ngày một phát triển
+                </p>
+              </div>
+              <div class="footer-homepage-contact">
+                <div class="phone">
+                  <i class="fa fa-mobile" aria-hidden="true" style="color: #3fb871; font-size: 22px; margin-right: 10px;"></i>
+                  <p>Điện thoại : (84-4) 66.558.868</p>
+                </div>
+                <div class="email">
+                  <i class="fa fa-envelope-o" aria-hidden="true" style="color: #3fb871;  margin-right: 10px;"></i>
+                  <p>Email: info@dkt.com.vn</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="footer-homepage-secondContent">
+              <div class="footer-homepage-infoCustomer">
+                <p class="info_title">THÔNG TIN KHÁCH HÀNG</p>
+                <div class="footer-homepage-detailInfo">
+                  <p>> Tài khoản của tôi</p>
+                  <p>> Sản phẩm yêu thích</p>
+                  <p>> Lịch sử mua hàng</p>
+                  <p>> Chính sách đổi trả</p>
+                  <p>> Góp ý, khiếu nại</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-homepage-thirdConten">
+              <div class="footer-homepage-infoCustomer">
+                <p class="info_title">HỖ TRỢ DỊCH VỤ</p>
+                <div class="footer-homepage-detailInfo">
+                  <p>> Hệ thống cửa hàng</p>
+                  <p>> Hướng dẫn mua hàng</p>
+                  <p>> Hướng dẫn thanh toán</p>
+                  <p>> Tích điểm đổi quà</p>
+                  <p>> Câu hỏi thường gặp</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-homepage-fourContent">
+              <div class="footer-homepage-infoCustomer">
+                <p class="info_title">DANH SÁCH ƯU ĐÃI</p>
+                <div class="footer-homepage-detailInfo">
+                  <p>> Chính sách giao hàng</p>
+                  <p>> Chính sách đổi trả sản phẩm</p>
+                  <p>> Chính sách bảo hành</p>
+                  <p>> Giới thiệu sản phẩm mới</p>
+                  <p>> Chính sách trả góp</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-homepage-fiveContent">
+              <div class="footer-homepage-infoCustomer">
+                <p class="info_title">TIN TỨC</p>
+                <div class="footer-homepage-detailInfo">
+                  <p>> Tin mới</p>
+                  <p>> Khiếu nại</p>
+                  <p>> Tuyển dụng</p>
+                  <p>> Download</p>
+                  <p>> Tags</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
+
+
+
+<!-- <div class="footer-homepage">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <div class="footer-homepage-titleInfo">
+                <p>KÊNH THÔNG TIN TỪ CHÚNG TÔI</p>
+                <div class="footer-homepage-social">
+                  <div class="facebook">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </div>
+                  <div class="twitter">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </div>
+                  <div class="youtube">
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                  </div>
+                  <div class="vimeo">
+                    <i class="fa fa-vimeo" aria-hidden="true"></i>
+                  </div>
+                </div>
+              </div>
+            </di  v>
+  
+            <div class="col-3">
+              <div class="footer-homepage-inform">
+                <p>ĐĂNG KÝ NHẬN <br> EMAIL TỪ CHÚNG TÔI:</p>
+              </div>
+            </div>
+  
+            <div class="col-5">
+              <div class="footer-homepage-form">
+                <form action="" class="footer-homepage-search">
+                  <input type="search" id="search" class="footer-homepage-search">
+                  <button><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-homepage-hrtag">
+            <hr width="100%" style="color: #494949;">
+          </div>
+  
+          <div class="row">
+            <div class="col-3">
+              <div class="footer-homepage-logo">
+                <img src="../assets/Logo-Icon.png" alt="">
+              </div>
+              <div class="footer-homepage-establish">
+                <p>Green Shop được thành lập từ 8/2010 được sự tin tưởng của 
+                  khách hàng trong suốt thời gian hoạt động đến nay cửa hàng ngày một phát triển
+                </p>
+              </div>
+              <div class="footer-homepage-contact">
+                <div class="phone">
+                  <i class="fa fa-mobile" aria-hidden="true" style="color: #3fb871; font-size: 22px; margin-right: 10px;"></i>
+                  <p>Điện thoại : (84-4) 66.558.868</p>
+                </div>
+                <div class="email">
+                  <i class="fa fa-envelope-o" aria-hidden="true" style="color: #3fb871;  margin-right: 10px;"></i>
+                  <p>Email: info@dkt.com.vn</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="footer-homepage-title">
+                <p class="footer-homepage-title-customerInfo">THÔNG TIN KHÁCH HÀNG</p>
+                <div class="footer-homepage-detailInfo">
+                  <p>> Tài khoản của tôi</p>
+                  <p>> Sản phẩm yêu thích</p>
+                  <p>> Lịch sử mua hàng</p>
+                  <p>> Chính sách đổi trả</p>
+                  <p>> Góp ý, khiếu nại</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="footer-homepage-title">
+                <p class="footer-homepage-title-customerInfo">HỖ TRỢ DỊCH VỤ</p>
+                <div class="footer-homepage-detailInfo">
+                  <p>> Hệ thống cửa hàng</p>
+                  <p>> Hướng dẫn mua hàng</p>
+                  <p>> Hướng dẫn thanh toán</p>
+                  <p>> Tích điểm đổi quà</p>
+                  <p>> Câu hỏi thường gặp</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-2">
+              <div class="footer-homepage-title">
+                <p class="footer-homepage-title-customerInfo">DANH SÁCH ƯU ĐÃI</p>
+                <div class="footer-homepage-detailInfo">
+                  <p>> Chính sách giao hàng</p>
+                  <p>> Chính sách đổi trả sản phẩm</p>
+                  <p>> Chính sách bảo hành</p>
+                  <p>> Giới thiệu sản phẩm mới</p>
+                  <p>> Chính sách trả góp</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-1">
+              <div class="footer-homepage-title">
+                <p class="footer-homepage-title-customerInfo">TIN TỨC</p>
+                <div class="footer-homepage-detailInfo">
+                  <p>> Tin mới</p>
+                  <p>> Khiếu nại</p>
+                  <p>> Tuyển dụng</p>
+                  <p>> Download</p>
+                  <p>> Tags</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-homepage-hrtag">
+            <hr width="100%" style="color: #494949;">
+          </div>
+  
+          <div class="row">
+            <div class="col-8">
+              <div class="footer-homepage-end">
+                <p class="sitemap">Sitemap</p>
+                <p class="category_product">Danh mục sản phẩm</p>
+                <p class="cooperate">Hợp tác</p>
+                <p class="info_contact">Thông tin liên hệ</p>
+                <p class="frequently_questions">Câu hỏi thường gặp</p>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="footer-homepage-credit_card">
+                <i class="fa fa-cc-visa" aria-hidden="true"></i>
+                <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+                <i class="fa fa-cc-paypal" aria-hidden="true"></i>
+                <i class="fa fa-cc-discover" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
