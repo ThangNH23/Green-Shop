@@ -26,6 +26,47 @@
   position: relative;
 }
 
+
+@media only screen and (max-width: 780px) {
+  .body-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .body-shopping-product {
+    padding-bottom: 20px;
+  }
+
+  .categories-price {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+
+  .products{
+    flex-direction: column;
+  }
+  .products .categories-hot-products {
+      width: 100% !important;
+  }
+
+ }
+
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .categories-price {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .categories-price {
+    flex-direction: column;
+  }
+
+
+}
+
+
 $myFirstColor: #fff;
 $mySecondColor: #3fb871;
 $mainColor: #898989;
@@ -198,6 +239,7 @@ body {
   }
 
   &-dropdown {
+    position: relative;
     i {
       align-items: center;
       padding-left: 5px;
@@ -214,14 +256,21 @@ body {
   }
 
   &-product-list {
+    width: 100%;
     display: none;
     position: absolute; 
     z-index: 1;
     top: 53px;
     flex-direction: column;
     list-style: none;
-    position: absolute;
     background-color: $mySecondColor;
+
+    li{
+      text-align: center;
+      &:hover {
+        background-color: #36a66d;
+      }
+    }
 
     a {	
       display: inline-block;
@@ -230,10 +279,7 @@ body {
       font-size:20px;
       font-size: 14px;
       text-decoration:none;
-      &:hover {
-        background-color: #36a66d;
-      }
-  }
+    }
   } 
 }
 
@@ -283,9 +329,9 @@ body {
       position: absolute;
       border: 1px solid;
       border-radius: 50px;
-      width: 50px;
-      height: 50px;
-      margin: 15px 20px;
+      width: 45px;
+      height: 45px;
+      margin: 10px 15px;
       display: flex;
       @include justify_align;
       background-color: $mySecondColor;
@@ -392,6 +438,7 @@ body {
     &-title {
       padding-top: 26px;
       font-weight: bold;
+      font-size: 14px;
       color: $mySecondColor;
       white-space: nowrap;
       overflow: hidden;
@@ -399,6 +446,7 @@ body {
     }
 
     &-detail {
+      font-size: 12px;
       white-space: pre-line;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -409,98 +457,12 @@ body {
 
     &-continues {
       color: $mySecondColor;
+      font-size: 12px;
     }
   }
 }
 
 // -----------------------------------------------------------------
-
-// .footer-homepage {
-//   padding-top: 2%;
-//   background-color: $color3131;
-
-//   &-titleInfo {
-//     color: $mainColor;
-//     font-size: 14px;
-//     font-weight: bold;
-//   }
-
-//   &-titleInfo p {
-//     margin-bottom: 5px;
-//   }
-
-//   &-social {
-//     display: flex;
-
-//       .facebook,
-//       .twitter,
-//       .youtube,
-//       .vimeo {
-//         margin-right: 25px;
-//         color: $mainColor;
-//         cursor: pointer;
-//       }
-//   }
-
-//   &-inform {
-//     color: $mainColor;
-//     font-weight: bold;
-//   }
-
-//   &-search {
-//     width: 100%;
-//     height: 50px;
-//     display: flex;
-//     border: none;
-//     outline: none;
-
-//     input {
-//       padding-left: 30px;
-//     }
-
-//     button {
-//       border: none;
-//       background-color: $mySecondColor;
-//       width: 60px;
-//       color: $myFirstColor;
-//     }
-//   }
-
-//   &-establish p, &-contact p {
-//     color: $colorb7;
-//   }
-//   &-contact {
-//     .phone, .email {
-//       display: flex;
-//     } 
-//   }
-
-//   &-title {
-//     &-customerInfo {
-//       color: $mySecondColor;
-//       font-weight: bold;
-//       margin-top: 25px;
-//     }
-//   }
-
-//   &-detailInfo {
-//     color: $colorb7;
-//     margin-top: 22px;
-//   }
-
-//   &-end, &-credit_card {
-//     display: flex;
-//     p, i {
-//       margin-right: 20px;
-//       color: $colorb7;
-//       cursor: pointer;
-//     }
-//   }
-
-//   &-credit_card {
-//     justify-content: flex-end;
-//   }
-// }
 
 .footer-homepage {
   background-color: $color3131;

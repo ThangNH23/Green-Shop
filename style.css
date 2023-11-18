@@ -1,5 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+@media only screen and (max-width: 780px) {
+  .body-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .body-shopping-product {
+    padding-bottom: 20px;
+  }
+  .categories-price {
+    flex-direction: column;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .products {
+    flex-direction: column;
+  }
+  .products .categories-hot-products {
+    width: 100% !important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991.98px) {
+  .categories-price {
+    flex-direction: column;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .categories-price {
+    flex-direction: column;
+  }
+}
 body p {
   margin: 0;
 }
@@ -147,6 +177,9 @@ body ul {
 .nav-bar-main-menu .homepage:hover, .nav-bar-main-menu .introduce:hover, .nav-bar-main-menu .sanpham:hover, .nav-bar-main-menu .sanphammoi:hover, .nav-bar-main-menu .tintuc:hover, .nav-bar-main-menu .lienhe:hover {
   background-color: #36a66d;
 }
+.nav-bar-dropdown {
+  position: relative;
+}
 .nav-bar-dropdown i {
   align-items: center;
   padding-left: 5px;
@@ -156,14 +189,20 @@ body ul {
   display: flex;
 }
 .nav-bar-product-list {
+  width: 100%;
   display: none;
   position: absolute;
   z-index: 1;
   top: 53px;
   flex-direction: column;
   list-style: none;
-  position: absolute;
   background-color: #3fb871;
+}
+.nav-bar-product-list li {
+  text-align: center;
+}
+.nav-bar-product-list li:hover {
+  background-color: #36a66d;
 }
 .nav-bar-product-list a {
   display: inline-block;
@@ -172,9 +211,6 @@ body ul {
   font-size: 20px;
   font-size: 14px;
   text-decoration: none;
-}
-.nav-bar-product-list a:hover {
-  background-color: #36a66d;
 }
 
 .content-title, .content-hire, .content-text {
@@ -218,9 +254,9 @@ body ul {
   position: absolute;
   border: 1px solid;
   border-radius: 50px;
-  width: 50px;
-  height: 50px;
-  margin: 15px 20px;
+  width: 45px;
+  height: 45px;
+  margin: 10px 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -332,12 +368,14 @@ body ul {
 .categories .news-infoDetail-title {
   padding-top: 26px;
   font-weight: bold;
+  font-size: 14px;
   color: #3fb871;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .categories .news-infoDetail-detail {
+  font-size: 12px;
   white-space: pre-line;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -347,6 +385,7 @@ body ul {
 }
 .categories .news-infoDetail-continues {
   color: #3fb871;
+  font-size: 12px;
 }
 
 .footer-homepage {
