@@ -172,7 +172,7 @@ const Header = () => {
             <div className="carousel-item active">
               <div
                 className="carousel-caption d-none d-md-block"
-                style={{ marginBottom: 100 }}
+                style={{ marginBottom: 200 }}
               >
                 <p className="content-title">GREEN SHOP</p>
                 <p className="content-hire">CHO THUÊ CÂY CẢNH TẾT 21016</p>

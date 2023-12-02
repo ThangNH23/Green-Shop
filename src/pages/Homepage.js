@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import ProductInfo from "../components/ProductInfo";
@@ -38,7 +38,7 @@ const Homepage = () => {
     {
       image: "",
       name: "",
-      discount:true,
+      discount: true,
       evaluation: 1,
       price: 1000,
     },
@@ -51,6 +51,22 @@ const Homepage = () => {
     },
   ]);
 
+  // const [data, setData] = useState([]);
+
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     await fetch("https://63a571e42a73744b008e23f7.mockapi.io/API/Product")
+  //       .then((response) => response.json())
+  //       .then((data) => {
+  //         setData(data);
+  //         console.log("day la data", data);
+  //       });
+  //   };
+
+  //   fetchData();
+  // }, []);
+
+  // console.log("Data mock", data);
 
   return (
     <>
@@ -80,17 +96,16 @@ const Homepage = () => {
                 </div>
               );
             })}
-           
 
-            <div className="col-6">
+            {/* <div className="col-6">
               <div className="categories-page-1">
                 <ProductInfo sale={true} />
-              </div>
+              </div> */}
 
-              {/* null undefine false => false => var ? "true" : "false" ==>  "false"
+            {/* null undefine false => false => var ? "true" : "false" ==>  "false"
               "a" 1 true => true => var ? "1" : "false" ==>  "1" */}
 
-              <div className="row">
+            {/* <div className="row">
                 <div className="col-6">
                   <ProductInfo sale={true} />
                 </div>
@@ -113,7 +128,7 @@ const Homepage = () => {
               <div className="categories-page-1">
                 <ProductInfo sale={true} />
               </div>
-            </div>
+            </div> */}
           </div>
 
           <div className="row products">
@@ -125,30 +140,12 @@ const Homepage = () => {
                   style={{ color: "#494949", marginTop: "-45px" }}
                 />
               </div>
-              
-              <div className="categories-page-2">
-                <HorizontalProduct />
-              </div>
 
-              <div className="categories-page-2">
-                <HorizontalProduct />
-              </div>
-
-              <div className="categories-page-2">
-                <HorizontalProduct />
-              </div>
-
-              <div className="categories-page-2">
-                <HorizontalProduct />
-              </div>
-
-              <div className="categories-page-2">
-                <HorizontalProduct />
-              </div>
-
-              <div className="categories-page-2">
-                <HorizontalProduct />
-              </div>
+              {highLineProduct.map((item, index) => (
+                <div className="categories-page-2">
+                  <HorizontalProduct />
+                </div>
+              ))}
             </div>
 
             <div className="col-9">
@@ -161,7 +158,6 @@ const Homepage = () => {
               </div>
               <div className="row">
                 <div className="col-4">
-
                   <div className="promotional_product">
                     <ProductInfo sale={true} />
                   </div>
@@ -191,12 +187,11 @@ const Homepage = () => {
               </div>
             </div>
           </div>
-          
-          
+
           <div className="row">
             <div className="col-12">
               <div className="image-famous">
-                <img src={require('../assets/img-content-1.png')} alt="" />
+                <img src={require("../assets/img-content-1.png")} alt="" />
               </div>
             </div>
           </div>
@@ -213,7 +208,7 @@ const Homepage = () => {
           </div>
           <div className="row">
             <div className="col-3">
-              <ProductInfo sale={true}/>
+              <ProductInfo sale={true} />
               <ProductInfo />
             </div>
             <div className="col-3">
