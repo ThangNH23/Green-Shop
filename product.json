@@ -1,0 +1,81 @@
+{
+  "content_product": {
+    "item1": [
+      {
+        "createdAt": "2023-12-06T14:27:34.470Z",
+        "name": "Cây danh dự",
+        "image": "https://res.cloudinary.com/djveiec3v/image/upload/v1701935199/pibwzujs0d5n56ztpdyq.png",
+        "oldPrice": "250.000",
+        "evaluation": 4,
+        "price": "475.000",
+        "category": "category 1",
+        "status": true,
+        "sale": 0,
+        "id": "1"
+      },
+      {
+        "createdAt": "2023-12-06T11:47:22.330Z",
+        "name": "Cây dứa nhỏ",
+        "image": "https://res.cloudinary.com/djveiec3v/image/upload/v1703210378/rffcfnp9o4mzk37mgk0u.png",
+        "oldPrice": "250.000",
+        "evaluation": 18,
+        "price": "668.000",
+        "category": "category 2",
+        "status": false,
+        "sale": 50,
+        "id": "2"
+      },
+      {
+        "createdAt": "2023-12-06T23:58:59.181Z",
+        "name": "Cây cọ ta",
+        "image": "https://res.cloudinary.com/djveiec3v/image/upload/v1703210489/kgrahjqfvnaqovucwgg6.png",
+        "oldPrice": "250.000",
+        "evaluation": 86,
+        "price": "770.000",
+        "category": "category 3",
+        "status": true,
+        "sale":0,
+        "id": "3"
+      }
+    ],
+    "item2": [
+      {
+        "createdAt": "2023-12-06T14:27:34.470Z",
+        "name": "Cây Dạ Lam",
+        "image": "https://res.cloudinary.com/djveiec3v/image/upload/v1703210547/gvv06q1xgsqakdtmpdik.png",
+        "oldPrice": "260.000",
+        "evaluation": 4,
+        "price": "555.000",
+        "category": "category 1",
+        "status": false,
+        "sale":0,
+        "id": "4"
+      },
+      {
+        "createdAt": "2023-12-06T11:47:22.330Z",
+        "name": "Cây Danh Dự",
+        "image": "https://res.cloudinary.com/djveiec3v/image/upload/v1703210595/exjo4ihwvz0ef5pnw0g7.png",
+        "oldPrice": "250.000",
+        "evaluation": 18,
+        "price": "780.000",
+        "category": "category 2",
+        "status": false,
+        "sale":0,
+        "id": "5"
+      },
+      {
+        "createdAt": "2023-12-06T23:58:59.181Z",
+        "name": "Cây dứa nhỏ",
+        "image": "https://res.cloudinary.com/djveiec3v/image/upload/v1703210627/odpr9xa6ozb9uwifzddv.png",
+        "oldPrice": "250.000",
+        "evaluation": 86,
+        "price": "680.000",
+        "category": "category 3",
+        "status": false,
+        "sale": -10,
+        "id": "6"
+      }
+    ]
+  }
+ 
+}

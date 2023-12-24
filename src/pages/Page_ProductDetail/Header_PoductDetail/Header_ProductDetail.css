@@ -1,0 +1,248 @@
+.header_ProductImage img {
+    width: 70%;
+    height: 70%;
+}
+
+.header_ProductImage {
+    margin-top: 10em;
+    display: flex;
+    justify-content: end;
+}
+
+.info_productDetail {
+    margin-top: 10em;
+}
+
+.info_productDetail_name {
+    font-size: 18px;
+}
+
+.info_productDetail_price {
+    display: flex;
+}
+
+.newPrice {
+    color: red;
+}
+
+.oldPrice {
+    text-decoration: line-through;
+    margin-left: 2em;
+    font-family: "Roboto Slab", serif;
+}
+
+.info_productDetail_name, .categories-star, .info_productDetail_price {
+    margin: 10px 10px;
+}
+
+#amount {
+    margin-right: 10px;
+}
+
+#buy-amount {
+    display: flex;
+    margin-left: 5em;
+}
+
+#buy-amount button {
+    width: 35px;
+    outline: none;
+    border: 1px solid #ececec;
+    background: none;
+    cursor: pointer;
+}
+
+#buy-amount button:hover {
+    background-color: #ececec;
+}
+
+#buy-amount #amount {
+    width: 50px;
+    text-align: center;
+    border: 1px solid #ececec;
+}
+
+.minusButton {
+    margin-right: 10px;
+}
+
+.minusButton svg, .plusButton svg {
+    width: 15px;
+}
+
+.info_productDetail_quantity {
+    display: flex;
+    margin: 30px 0px;
+}
+
+.buy-now button {
+    width: 180px;
+    height: 55px;
+    margin-top: 10px;
+    background-color: #3fb871;
+    color: white;
+    border-radius: 25px;
+    border: none;
+}
+
+.buttons {
+    display: flex;
+}
+
+.search {
+    display: flex;
+    border: 1px solid #494949;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 10px 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.favorite {
+    display: flex;
+    border: 1px solid #494949;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.facebook_button button {
+    width: 70px;
+    height: 30px;
+    display: flex;
+    padding: 10px;
+    margin: 20px 5px;
+    align-items: center;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #4267b2;
+}
+.facebook_button button i {
+    padding-right: 5px;
+}
+
+.tweet_button button {
+    width: 80px;
+    height: 30px;
+    display: flex;
+    padding: 0px;
+    margin: 20px 5px;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #1DA1F2;
+}
+.tweet_button button i {
+    padding-left: 5px;
+}
+.tweet_button button p {
+    padding-right: 5px;
+}
+
+.google_button button {
+    width: 45px;
+    height: 30px;
+    display: flex;
+    padding: 0px 8px;
+    margin: 20px 5px;
+    align-items: center;
+    border: 1px solid #959595;
+    background-color: #fff;
+    color: red;
+    border-radius: 3px;
+}
+
+.share_button button {
+    width: 70px;
+    height: 30px;
+    display: flex;
+    padding: 0px;
+    margin: 20px 5px;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background-color: red;
+}
+.share_button button i {
+    padding-left: 5px;
+}
+
+.socials {
+    display: flex;
+}
+
+
+.wrap {
+    margin: 20px 10px;
+    position: relative;
+}
+
+.arrow {
+    width: 10px; 
+    height: 10px; 
+    border: 1px solid gray; 
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+    margin-top: -5px; 
+    left: -5px; 
+    /* z-index: 10; */
+    border-radius: 1px; 
+}
+
+.arrow-cover {
+    top: 50%;
+    margin-top: -5px; 
+    left: -4px;
+    width: 10px;
+    height: 10px; 
+    border: 1px solid transparent; 
+    position: absolute;
+    background: white;
+    z-index: 30;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-radius: 1px; 
+}
+
+.box {
+    width: 40px; 
+    height: 30px; 
+    background: white;
+    z-index: 20;
+    position: relative;
+    border: 1px solid gray; 
+    background: white;
+    border-radius: 5px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box_google {
+    width: 30px; 
+    height: 30px; 
+    background: white;
+    z-index: 20;
+    position: relative;
+    border: 1px solid gray; 
+    background: white;
+    border-radius: 5px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
