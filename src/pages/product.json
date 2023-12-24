@@ -1,0 +1,75 @@
+{
+  "item1": [
+    {
+      "createdAt": "2023-12-06T14:27:34.470Z",
+      "name": "Cây chân chim",
+      "image": "https://res.cloudinary.com/djveiec3v/image/upload/v1701934896/gsbyras7k94b34hqjhsi.png",
+      "discount": "260.000",
+      "evaluation": 4,
+      "price": "250.000",
+      "category": "category 1",
+      "status": false,
+      "id": "1"
+    },
+    {
+      "createdAt": "2023-12-06T11:47:22.330Z",
+      "name": "Cây dạ lam",
+      "image": "https://res.cloudinary.com/djveiec3v/image/upload/v1701935168/cgahas03gx1nfbrcvqt8.png",
+      "discount": "250.000",
+      "evaluation": 18,
+      "price": "500.000",
+      "category": "category 2",
+      "status": true,
+      "id": "2"
+    },
+    {
+      "createdAt": "2023-12-06T23:58:59.181Z",
+      "name": "Cây danh dự",
+      "image": "https://res.cloudinary.com/djveiec3v/image/upload/v1701935199/pibwzujs0d5n56ztpdyq.png",
+      "discount": "250.000",
+      "evaluation": 86,
+      "price": "850.000",
+      "category": "category 3",
+      "status": false,
+      "id": "3"
+    }
+  ],
+  "item2": [
+    {
+      "createdAt": "2023-12-06T14:27:34.470Z",
+      "name": "Cây chân chim4",
+      "image": "https://res.cloudinary.com/djveiec3v/image/upload/v1701934896/gsbyras7k94b34hqjhsi.png",
+      "discount": "260.000",
+      "evaluation": 4,
+      "price": "250.000",
+      "category": "category 1",
+      "status": false,
+      "id": "4"
+    },
+    {
+      "createdAt": "2023-12-06T11:47:22.330Z",
+      "name": "Cây dạ lam5",
+      "image": "https://res.cloudinary.com/djveiec3v/image/upload/v1701935168/cgahas03gx1nfbrcvqt8.png",
+      "discount": "250.000",
+      "evaluation": 18,
+      "price": "500.000",
+      "category": "category 2",
+      "status": true,
+      "id": "5"
+    },
+    {
+      "createdAt": "2023-12-06T23:58:59.181Z",
+      "name": "Cây danh dự6",
+      "image": "https://res.cloudinary.com/djveiec3v/image/upload/v1701935199/pibwzujs0d5n56ztpdyq.png",
+      "discount": "250.000",
+      "evaluation": 86,
+      "price": "850.000",
+      "category": "category 3",
+      "status": false,
+      "id": "6"
+    }
+  ],
+
+  "pageSize": 10,
+  "pageIndex": 1
+}

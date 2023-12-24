@@ -284,6 +284,7 @@ body ul {
 .categories .categories-firstPrice {
   color: red;
   font-size: 14px;
+  font-family: "Roboto Slab", serif;
 }
 .categories-new {
   position: absolute;
@@ -291,15 +292,31 @@ body ul {
   border-radius: 50px;
   width: 45px;
   height: 45px;
-  margin: 10px 15px;
+  margin: 20px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #3fb871;
   color: #fff;
 }
+.categories-discount {
+  position: absolute;
+  border: 1px solid;
+  border-radius: 50px;
+  width: 45px;
+  height: 45px;
+  margin: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d64146;
+  color: #fff;
+}
+
 .categories-new p {
-  margin: 0px 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
 }
 .categories-image img {
   width: 100%;
@@ -314,8 +331,12 @@ body ul {
 }
 .categories-name {
   font-size: 16px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #656565;
   margin-bottom: 5px;
 }
+
 .categories-star {
   color: #febf01;
 }
@@ -326,6 +347,7 @@ body ul {
 }
 .categories-priceDiscount {
   text-decoration: line-through;
+  font-family: "Roboto Slab", serif;
 }
 .categories-page-1a img {
   width: 100%;
@@ -349,11 +371,11 @@ body ul {
   align-items: center;
   display: flex;
   /* width: 100%; */
-  line-height: 30px;
+  height: 121px;
 }
 
 .categories .categories-page-2 img {
-  width: 150%;
+  width: 160%;
   height: 150%;
 }
 .categories .categories-page-2-info {
@@ -366,7 +388,7 @@ body ul {
   color: #ee393e;
 }
 .categories .discount-product-image1 {
-  margin-top: 15px;
+  margin-top: 5px;
 }
 .categories .discount-product-image1 img {
   width: 100%;
@@ -378,7 +400,6 @@ body ul {
   text-align: center;
   padding-top: 20px;
   position: relative;
-  margin-bottom: 25px;
 }
 .categories .image-famous img, .categories .news-image1 img {
   width: 100%;
@@ -390,7 +411,6 @@ body ul {
   text-align: center;
   padding-top: 20px;
   position: relative;
-  margin-bottom: 25px;
 }
 .categories .news-infoDetail {
   padding-top: 24px;
@@ -424,6 +444,7 @@ body ul {
 }
 
 .footer-homepage {
+  font-family: Arial;
   background-color: #313131;
   padding-top: 2%;
 }
@@ -460,9 +481,12 @@ body ul {
   border: none;
   outline: none;
 }
-.footer-homepage-search input {
-  padding-left: 30px;
+
+.promotional_product {
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
+
 .footer-homepage-search button {
   border: none;
   background-color: #3fb871;
@@ -500,4 +524,35 @@ body ul {
 .footer-homepage-detailInfo p {
   padding-top: 20px;
   font-size: 12px;
+}
+
+
+.end_footer_info li {
+  list-style: none;
+  color: #b7b7b7;
+  font-size: 12px;
+  padding-right: 15px;
+  font-family: Arial;
+}
+
+.end_footer_info {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.end_footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment_method {
+  display: flex;
+  list-style: none;
+  
+}
+
+.payment_method li{
+  padding-left: 15px;
+  color: #b7b7b7;
+  cursor: pointer;
 }

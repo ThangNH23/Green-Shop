@@ -1,23 +1,25 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-const ProductInfo = ({ sale }) => {
+const OutStanding = ({ name, price, image, status, oldPrice, evaluation, sale }) => {
+
   return (
     <>
       <div className="discount-product-image1">
-        {sale ? (
+        {status === true && (
           <div className="categories-new">
-            <p>New</p>
-          </div>
-        ) : (
-          <div className="categories-new">
-            <p>50%</p>
+            <p>NEW</p>
           </div>
         )}
-        <img src={require('../assets/spx2-15.png')} alt=''></img>
-        {/* <img src={`${process.env.PUBLIC_URL}/src/assets/spx2-4.png`} alt='' /> */}
+
+        {sale  !== 0 && (
+          <div className="categories-discount">
+            <p>{sale}%</p>
+          </div>
+        )}
+        <img src={image} alt={name}></img>
       </div>
       <div className="new-product-information">
-        <p className="categories-name">Cây Dạ Lamm</p>
+        <p className="categories-name">{name}</p>
         <div className="categories-star">
           <i className="fa fa-star" aria-hidden="true" />
           <i className="fa fa-star" aria-hidden="true" />
@@ -26,16 +28,16 @@ const ProductInfo = ({ sale }) => {
           <i className="fa fa-star-half-o" aria-hidden="true" />
         </div>
         <div className="categories-price">
-          <p className="categories-firstPrice">250.000 đ</p>
-          <p className="categories-priceDiscount">250.000 đ</p>
+          <p className="categories-firstPrice">{price} đ</p>
+          <p className="categories-priceDiscount">{oldPrice} đ</p>
         </div>
       </div>
     </>
   );
 };
 
-ProductInfo.propTypes = {
-    sale: PropTypes.string
-}
+OutStanding.propTypes = {
+  sale: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
+};
 
-export default ProductInfo;
+export default OutStanding;
